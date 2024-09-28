@@ -19,11 +19,10 @@ body {
 
 header {
     flex-shrink: 0; /* Asegura que el header no se encoja */
-}
-           /* Gallery Section */
+}  /* Gallery Section */
         .gallery-section {
             display: flex;
-         
+            flex-direction: column;
             padding: 40px 20px;
             text-align: center;
         }
@@ -36,9 +35,9 @@ header {
 
         .gallery {
             display: flex;
-        
+            flex-wrap: wrap;
             gap: 20px;
-            
+            justify-content: center;
         }
 
         .gallery-item {
@@ -60,6 +59,24 @@ header {
             height: auto;
             border-radius: 12px;
         }
+
+        .gallery-item h3 {
+            margin: 15px 0;
+            font-size: 1.7em;
+            color: #333;
+        }
+
+        .gallery-item p {
+            color: #777;
+        }
+
+        .gallery-item .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            color: #999;
+        }
+        
 
   
 section {
